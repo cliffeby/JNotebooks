@@ -8,27 +8,12 @@ JN is a combination of Markdown with executable code in cells.  This example wil
 For a good description of JN on Azure, Scott Hanselman has a nice YouTube video on JN many features - https://www.youtube.com/watch?v=JWEhns28Cr4
 
 #### Azure Storage SDK
-Surprisingly, the Azure Storage SDK was not pre-installed in Azure hosted JN.  Use pip or Annaconda (package managers) to install the azure storage sdk.  Once installed, this shell/bash command can be eliminated for future runs in this project.
+Surprisingly, the Azure Storage SDK was not pre-installed in Azure hosted JN.  Use pip or Annaconda (package managers) to install the azure storage sdk.  Once installed, this shell/bash command can be eliminated for futre runs in this project.
 
 
 ```python
 !pip install azure-storage
 ```
-
-    Requirement already satisfied: azure-storage in /home/nbuser/anaconda3_23/lib/python3.4/site-packages
-    Requirement already satisfied: azure-nspkg>=2.0.0 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from azure-storage)
-    Requirement already satisfied: azure-common>=1.1.5 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from azure-storage)
-    Requirement already satisfied: cryptography in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from azure-storage)
-    Requirement already satisfied: python-dateutil in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from azure-storage)
-    Requirement already satisfied: requests in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from azure-storage)
-    Requirement already satisfied: idna>=2.1 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cryptography->azure-storage)
-    Requirement already satisfied: asn1crypto>=0.21.0 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cryptography->azure-storage)
-    Requirement already satisfied: packaging in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cryptography->azure-storage)
-    Requirement already satisfied: six>=1.4.1 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cryptography->azure-storage)
-    Requirement already satisfied: setuptools>=11.3 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages/setuptools-27.2.0-py3.4.egg (from cryptography->azure-storage)
-    Requirement already satisfied: cffi>=1.4.1 in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cryptography->azure-storage)
-    Requirement already satisfied: pycparser in /home/nbuser/anaconda3_23/lib/python3.4/site-packages (from cffi>=1.4.1->cryptography->azure-storage)
-
 
 #### Import Data
 Azure Table data is imported using the Azure Storage /Table Storage SDK and the data is shaped using Pandas to match the AMLS dataset.  I would typically import my credentials which are needed for Azure access, but for this public notebook, I use a Shared Access Signature token to access the data in read/query only format.  The token has an expiration date which can be refresehed on request.  Alternatively, I have a small sample dataset, in my DuckpinA repo on GitHub. See below in _Data Alternatives_ on how to access web based data.
@@ -690,7 +675,7 @@ To access that data, use curl and the url for the RAW option for that file in my
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100  323k  100  323k    0     0  1057k      0 --:--:-- --:--:-- --:--:-- 1059k
+    100  323k  100  323k    0     0  1403k      0 --:--:-- --:--:-- --:--:-- 1411k
 
 
 Use numpy or pandas to read the file.  In this case, I used numpy and sorted the records prior to creating the dataframe 
