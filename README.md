@@ -1,6 +1,15 @@
 
 ![png](https://user-images.githubusercontent.com/1431998/50466200-17ae6800-096a-11e9-8460-1997debbc14b.png)
 
+
+![png](https://user-images.githubusercontent.com/1431998/50466200-17ae6800-096a-11e9-8460-1997debbc14b.png)
+
+
+![png](https://user-images.githubusercontent.com/1431998/50466200-17ae6800-096a-11e9-8460-1997debbc14b.png)
+
+
+![png](https://user-images.githubusercontent.com/1431998/50466200-17ae6800-096a-11e9-8460-1997debbc14b.png)
+
 ### _Alternative Data Souces_
 #### Github Repo
 In my GitHub repo, I have a dataset (results01.csv) used for testing.  It is 3400+ records of csv data in the format:
